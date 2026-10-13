@@ -17,16 +17,16 @@ namespace G26W07WFCardDealer
 
             string suit = suits[card / values.Length];
             string value = values[card % values.Length];
-            string name = $"{value}_of_{suit}";
 
             if (value == "jack" || value == "queen" || value == "king")
             {
                 suit += "2";
             }
 
-            Card1.Image = Properties.Resources.ResourceManager
-                .GetObject(name) as Image
-                ?? Properties.Resources.red_joker;
+            Card1.Image = Properties.Resources
+                .ResourceManager
+                .GetObject($"{value}_of_{suit}")
+                as Image;
         }
     }
 }

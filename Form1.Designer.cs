@@ -35,7 +35,7 @@
             // 
             // Card1
             // 
-            Card1.Image = Properties.Resources.red_joker;
+            Card1.Image = Properties.Resources.red_joker1;
             Card1.Location = new Point(12, 12);
             Card1.Name = "Card1";
             Card1.Size = new Size(314, 362);
